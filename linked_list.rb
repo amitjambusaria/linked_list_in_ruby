@@ -57,6 +57,8 @@ class LinkedList
   end
 
   def reverse
+    return if @head.next_node.nil?
+
     current = @head.next_node
     right = current.next_node
     left = @head
